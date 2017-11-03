@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Make treasurydirect.gov password editable",
+  "version": "0.1.0",
+  "description": "Chrome extension that bypasses the garbage Turing test on treasurydirect.gov by stripping off the 'readonly' attribute from the password field. This lets you use password managers like LassPass.",
+ 
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://www.treasurydirect.gov/RS/PW-Display.do"]
+  }]
+ 
+}
